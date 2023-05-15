@@ -62,3 +62,6 @@ function printPairsInArrays(arr: any[]): void {
         }
     }
 }
+
+//TC: O(n^2)   (nested loops, both depend on length of arr)
+//SC: O(1)     (constant as the memory taken does not depend on the length of arr)

@@ -74,3 +74,6 @@ function reverseArray<T>(arr: T[]): T[] {
     }
     return arr;
 }
+
+//TC: O(n/2)   (we run a single loop which runs length/2 times, and hence depends on the length of the input array)
+//SC: O(1)     (the amount of storage taken is constant and does not depend on the length of the input array) 
