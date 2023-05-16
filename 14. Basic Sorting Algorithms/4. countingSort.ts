@@ -113,6 +113,10 @@ function countingSortUpdated(arr: number[]): number[] {
     //use max to create the nonNegativeAux, and use the min to create positiveAux.
     let nonNegativeAux: number[] = new Array(max + 1);
     let negativeAux: number[] = new Array(Math.abs(min) + 1);
+    //fill both arrays with 0s
+    for (let i = 0; i < nonNegativeAux.length; i++) nonNegativeAux[i] = 0;
+    for (let i = 0; i < negativeAux.length; i++) negativeAux[i] = 0;
+
     let sol: number[] = [];
 
     //loop over arr to add numbers to nonNegativeAux and negativeAux

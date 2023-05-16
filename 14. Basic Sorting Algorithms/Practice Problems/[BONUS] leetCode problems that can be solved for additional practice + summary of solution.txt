@@ -1,0 +1,33 @@
+=> https://leetcode.com/problems/sort-colors/
+    Q: Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+    We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+    You must solve this problem without using the library's sort function.
+
+    S: This can be solved with any in-place sorting algorithm, so bubble sort, insertion sort, or selection sort.
+        THIS IS NOT THE OPTIMAL SOLUTION THERE IS A DIFFERENT OPTIMAL SOLUTION, but this still works
+
+=> https://leetcode.com/problems/sort-the-people/
+    Q: You are given an array of strings names, and an array heights that consists of distinct positive integers. Both arrays are of length n.
+    For each index i, names[i] and heights[i] denote the name and height of the ith person.
+    Return names sorted in descending order by the people's heights.
+
+    S: Store the heights to their respective names in an object or Map. Use any sorting algorithm (preferabely not counting sort) to sort height.
+        Then loop over the sorted heights, and change names array to an array containing respective heights using the object that we declared at the start.
+
+=> https://leetcode.com/problems/sort-even-and-odd-indices-independently
+    Q: You are given a 0-indexed integer array nums. Rearrange the values of nums according to the following rules:
+    Sort the values at odd indices of nums in non-increasing order.
+        For example, if nums = [4,1,2,3] before this step, it becomes [4,3,2,1] after. The values at odd indices 1 and 3 are sorted in non-increasing order.
+    Sort the values at even indices of nums in non-decreasing order.
+        For example, if nums = [4,1,2,3] before this step, it becomes [2,1,4,3] after. The values at even indices 0 and 2 are sorted in non-decreasing order.
+    Return the array formed after rearranging the values of nums.
+
+    S: Store the even indexed elements and odd indexed elements in different arrays. Sort them individually, and then merge them into a single array.
+
+=> https://leetcode.com/problems/sorting-the-sentence/
+    Q: A sentence is a list of words that are separated by a single space with no leading or trailing spaces. Each word consists of lowercase and uppercase English letters.
+    A sentence can be shuffled by appending the 1-indexed word position to each word then rearranging the words in the sentence.
+    For example, the sentence "This is a sentence" can be shuffled as "sentence4 a3 is2 This1" or "is2 sentence4 This1 a3".
+    Given a shuffled sentence s containing no more than 9 words, reconstruct and return the original sentence.
+
+    S: Use a loop to create an array storing each word. Use the last letter of each letter as index. Similar to counting sort, use the array indexing to naturally sort out the array, then add it to a solution string.
