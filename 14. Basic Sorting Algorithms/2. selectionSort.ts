@@ -67,6 +67,8 @@ function selectionSort(arr: number[]): number[] {
         arr[i] = smallest;
         arr[smallestsIndex] = tempArrI;
     }
+
+    //returning arr is optional as this algorithm works in place
     return arr;
 }
 

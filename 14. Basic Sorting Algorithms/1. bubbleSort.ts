@@ -99,7 +99,7 @@ function bubbleSort(arr: number[]): number[] {
         //this procedure will be repeated until the array is sorted.
     }
 
-    //returning arr
+    //returning arr is optional as this algorithm works in place
     return arr;
 }
 

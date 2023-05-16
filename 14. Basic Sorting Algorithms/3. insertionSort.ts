@@ -49,7 +49,7 @@ function insertionSort(arr: number[]): number[] {
         }
 
     }
-    //return arr.
+    //return arr (optional since this algorithm works in place) 
     return arr;
 
 }
