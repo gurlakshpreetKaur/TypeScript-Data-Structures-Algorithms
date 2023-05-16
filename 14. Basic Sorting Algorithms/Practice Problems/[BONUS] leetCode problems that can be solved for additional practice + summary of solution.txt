@@ -5,6 +5,8 @@
 
     S: This can be solved with any in-place sorting algorithm, so bubble sort, insertion sort, or selection sort.
         THIS IS NOT THE OPTIMAL SOLUTION THERE IS A DIFFERENT OPTIMAL SOLUTION, but this still works
+    
+    The solution I came up with: https://leetcode.com/problems/sort-colors/submissions/951443599/ (bubble sort)
 
 => https://leetcode.com/problems/sort-the-people/
     Q: You are given an array of strings names, and an array heights that consists of distinct positive integers. Both arrays are of length n.
@@ -13,6 +15,8 @@
 
     S: Store the heights to their respective names in an object or Map. Use any sorting algorithm (preferabely not counting sort) to sort height.
         Then loop over the sorted heights, and change names array to an array containing respective heights using the object that we declared at the start.
+
+    The solution I came up with: https://leetcode.com/problems/sort-the-people/submissions/951519361/
 
 => https://leetcode.com/problems/sort-even-and-odd-indices-independently
     Q: You are given a 0-indexed integer array nums. Rearrange the values of nums according to the following rules:
@@ -24,6 +28,8 @@
 
     S: Store the even indexed elements and odd indexed elements in different arrays. Sort them individually, and then merge them into a single array.
 
+    The solution I came up with: https://leetcode.com/problems/sort-even-and-odd-indices-independently/submissions/951554936/
+
 => https://leetcode.com/problems/sorting-the-sentence/
     Q: A sentence is a list of words that are separated by a single space with no leading or trailing spaces. Each word consists of lowercase and uppercase English letters.
     A sentence can be shuffled by appending the 1-indexed word position to each word then rearranging the words in the sentence.
@@ -31,3 +37,5 @@
     Given a shuffled sentence s containing no more than 9 words, reconstruct and return the original sentence.
 
     S: Use a loop to create an array storing each word. Use the last letter of each letter as index. Similar to counting sort, use the array indexing to naturally sort out the array, then add it to a solution string.
+
+    The solution I came up with: https://leetcode.com/problems/sorting-the-sentence/submissions/951561072/
