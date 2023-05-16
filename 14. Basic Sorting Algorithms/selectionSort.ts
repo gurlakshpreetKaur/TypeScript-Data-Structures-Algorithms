@@ -1,16 +1,15 @@
 //selection sort is a beginner friendly and untuitive way of sorting an array.
-//most likely, if you've ever had to sort cards, you've used selection sort without even knowing it!
 //
 //the way it works is that we maintain two sections of the array, one with sorted items, and one with unsorted
 //items. we then go through the entire array, and find a suitable item to move over to the sorted section, until
 //the entire array is sorted.
 //
 //Example-
-//lets say I have the following cards-
-// 3   7   0   5   6
+//lets say I have the following array-
+// [3,   7,   0,   5,   6]
 // and I want to sort them, what would I do?
 //I'd follow this procedure-
-// first, i look through the cards to find the card with the smallest number
+// first, i look through the array to find the element with the smallest number
 //      3   7   0   5   6
 //              ^
 //           smallest
@@ -18,14 +17,14 @@
 //      0  |  3   7   5   6
 //   sorted|  unsorted    
 //
-//then, in the unsorted part, i once again look for the smallest card
+//then, in the unsorted part, i once again look for the smallest element
 //      0  |  3   7   5   6
 //            ^
 //           smallest
-// then, i move that card to the sorted part
+// then, i move that element to the sorted part
 //      0   3  |  7   5   6
 //
-// once again, i look for the smallest card in the unsorted part
+// once again, i look for the smallest element in the unsorted part
 //      0   3  |  7   5   6
 //                    ^
 //                  smallest
@@ -42,10 +41,10 @@
 //  after moving it to the sorted part, i am left with-
 //    0   3   5   6  |  7
 //  now, only one number is left in the unsorted part, so, it MUST be the largest number, and now i can move it to
-//  the end of the sorted cards.
+//  the end of the sorted array.
 //
 //   0   3   5   6   7
-//  our cards are now sorted.
+//  our array is now sorted.
 //  we will follow this same approach.
 //
 // implementation-
