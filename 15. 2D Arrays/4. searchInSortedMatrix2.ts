@@ -10,6 +10,7 @@
 //       If the item does not exist in the matrix, return false
 //          TC: O(n^2) due to the nested loops, SC: O(1) as the amount of memory used does not depends on the length
 //                                                          of array
+//
 function searchInSortedMatrixNaive(arr: number[][], target: number): boolean {
     //first calculate m and n, where m is row count, and n is column count
     let m = arr.length;
