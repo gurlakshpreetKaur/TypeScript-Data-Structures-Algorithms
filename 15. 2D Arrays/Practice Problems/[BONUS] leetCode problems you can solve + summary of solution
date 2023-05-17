@@ -1,0 +1,17 @@
+=> https://leetcode.com/problems/flipping-an-image/
+    Q: Given an n x n binary matrix image, flip the image horizontally, then invert it, and return the resulting image.
+    To flip an image horizontally means that each row of the image is reversed.
+        For example, flipping [1,1,0] horizontally results in [0,1,1].
+    To invert an image means that each 0 is replaced by 1, and each 1 is replaced by 0.
+        For example, inverting [0,1,1] results in [1,0,0].
+
+    S: Run a loop through to array to get index of each row. Inside that loop, take the row and reverse it (reversing an array is covered in the 13th chapter Arrays) then use an if condition to invert 0s to 1, and 1s to 0.
+
+    My solution: https://leetcode.com/problems/flipping-an-image/solutions/3534844/simple-beginner-friendly-solution/
+
+=> https://leetcode.com/problems/spiral-matrix-ii/
+    Q: Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order.
+
+    S: This is basically the reverse of the spiral matrix problem. Think about it for a few minutes.
+
+    My solution: https://leetcode.com/problems/spiral-matrix-ii/solutions/3534949/detailed-solution-with-comments-typescript/
