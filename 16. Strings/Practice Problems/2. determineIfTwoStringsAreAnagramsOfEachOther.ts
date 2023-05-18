@@ -77,3 +77,6 @@ function areAnagrams(string1: string, string2: string) {
     //  so we return true
     return true;
 }
+
+//TC: O(n)   (the loops depend on length of input)
+//SC: O(n)   (the space taken by letterCount object depends on length of input)

@@ -66,3 +66,9 @@ function compressString(str: string): string {
     //return the sol string at the end
     return sol;
 }
+
+//TC: O(n)   you might be looking at the code thinking its O(n^2) due to the 2 loops, but observe that even in
+//              the inner loop, we increment i, so the total number of iterations will be the same. in face,
+//              you could probably also write using just 1 for loop, its just that this approach is more readable,
+//              at least for me.
+//SC: O(n)   the length of the sol string depends on the length of the input string

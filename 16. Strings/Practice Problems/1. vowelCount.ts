@@ -31,3 +31,6 @@ function vowelCount(str: string) {
 }
 
 //see? you probably didnt even need comments to understand that
+
+//TC: O(n)   pretty obvious, single loop which depends on length of input
+//SC: O(1)   the variables will take up constant space in memory, it does not depend on length of input
