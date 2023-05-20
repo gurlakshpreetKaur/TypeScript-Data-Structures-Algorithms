@@ -1,0 +1,27 @@
+=> What is binary in the context of computers?
+    Binary is a word that means 'related to 2'. Modern computers use binary number systems as their core. That means
+    everything you see, is stored and computed by your copmuter in binary. Everything you type and click, or
+    any calculation requires your computer to first convert it into binary, only then can the computer work with it.
+    We, in the real world, commonly use the decimal number system. We have 10 digits- 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    And we form numbers with them. Al the numbers you know and love can we formed with them, no matter how large.
+    The binary number system as 2 numbers- 0, and 1. These 0s and 1s can also build numbers, no matter how large.
+    0s represent false, 1s represent true, and this way, electricity is used to perform calculations (dont quote
+    me on that, thats just something someone told me once).
+
+=> Why should we learn about binary?
+    1. Your working with computers, computers work with binary, so it would be polite to learn about binary.
+    2. If you do 5+6, your computer has to convert it into binary, then perform the computation, then convert it
+        back to decimal and return it (this, actually is why if you do 0.3 + 0.4 in python, you wont get 0.7,
+        you would get 0.699, as the result of change number systems so often). That is a lot of steps. If you learn
+        about binary, and binary operations, you could reduce the number of steps thereby making certain parts
+        of code faster.
+
+=> IMPORTANT: https://www.geeksforgeeks.org/binary-number-system-definition-conversion-examples/
+
+=> https://www.geeksforgeeks.org/what-is-bit-manipulation/
+
+=> look at binary representations of numbers and try to find patters: 
+    https://www.exploringbinary.com/decimal-binary-conversion-table/
+
+=> SPOILER: This one includes basically everything covered in this chapter. It is like the top-tier cheat sheet.
+    https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/
