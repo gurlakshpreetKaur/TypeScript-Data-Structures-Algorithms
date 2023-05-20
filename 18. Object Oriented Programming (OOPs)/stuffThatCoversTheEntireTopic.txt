@@ -1,0 +1,35 @@
+Since this repo is based on TS, rather than trying to explain these topics to you in my broken methodology, here 
+are links to website that would be better-
+
+For leaning basic TS-
+=> THE BEST: https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/
+        TS was created by Microsoft, so learn.microsoft.com also features a training module for TS. It isn't *that*
+        long, and is actually very informative, with coding exercises and quizzes. Much better than what I could do.
+        Also, at the end you get a certificate-ish thing that you can put on your resume if you want.
+        OOPs topics covered-
+            classes (encapsulation, abstraction, inheritance, polymorphism)
+            interfaces (abstraction, inheritance, polymorphism)
+            creating data types (inheritance, polymorphism, abstraction)
+            access modifiers (encapsulation, abstraction)
+            getters & setters (encapsulation, abstraction)
+            method overriding (polymorphism)
+
+
+=> Official website of TS: https://www.typescriptlang.org/
+        Literally official. It has docs, resources, everything.
+
+You could also try Codecademy, around half of the course (I think) is free, then you will have to pay, but it follows
+        a very direct read, then code approach, so if that's your cup of tea, this is where you go. This does start
+        all the way from the starting tho, so yes.
+
+This article directly features examples of OOPs in TS: 
+        https://dev.to/kevin_odongo35/object-oriented-programming-with-typescript-574o
+
+Resources about topics specifically-
+=> everything about classes- https://www.typescriptlang.org/docs/handbook/2/classes.html
+        (constructors, method, getters/setters, inheritance, overriding/overloading, static, this keyword, 
+        abstract classes, etc)
+=> deep-copy shallow-copy- https://www.geeksforgeeks.org/what-is-shallow-copy-and-deep-copy-in-javascript/
+=> destructors- https://stackoverflow.com/questions/55647714/is-it-possible-to-implement-destructor-for-typescript-class
+
+That is pretty much all you need to know. Remember to google if you encounter something you don't understand.
