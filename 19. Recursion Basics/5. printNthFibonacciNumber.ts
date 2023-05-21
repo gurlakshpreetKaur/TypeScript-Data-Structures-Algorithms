@@ -1,4 +1,4 @@
-//leetCode link: 
+//leetCode link: https://leetcode.com/problems/fibonacci-number/
 //Q:Given a number n as input, write a function that returns the nth fibonacci number
 //
 //What are fibonacci numbers?
@@ -44,3 +44,5 @@ function nthFibonacci(n: number) {
 //TC: O(2^n)  this is like a binary tree, for each function call, there will be 2 operations. due to recursion,
 //                  TC becomes O(2^n)
 //SC: O(n)   due to the function calls, n vars will be created which will take up space in the memory
+//              if you want to know more about it, read
+//                  here: https://stackoverflow.com/questions/43298938/space-complexity-of-recursive-function

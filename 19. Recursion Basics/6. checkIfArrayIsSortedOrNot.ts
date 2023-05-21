@@ -25,3 +25,6 @@ function isSorted(nums: number[], index = 1) {
     //if we made it to this statement, it means the if condition was false, so we move to the next element
     return isSorted(nums, index + 1);
 }
+
+//TC: O(n)
+//SC: O(n)
