@@ -26,3 +26,9 @@ function firstOccurance(nums: number[], target: number, currentIndex = 0): numbe
 
 //TC: O(n)
 //SC: O(n)  you know by now
+
+//To call the function-
+let NUMS_FIRST_OCCURANCE = [1, 2, 4, 2, 5, 1, 2, 7, 8, 9, 0];
+
+console.log(firstOccurance(NUMS_FIRST_OCCURANCE, 2)); //since currentIndex has a default value, we don't need to 
+//  specify it.

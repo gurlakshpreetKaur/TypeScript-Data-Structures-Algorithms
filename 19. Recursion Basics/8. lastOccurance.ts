@@ -32,3 +32,8 @@ function lastOccurance(nums: number[], target: number, currentIndex?: number): n
 //I don't need to tell you the TC or SC by now, but still
 //TC: O(n)
 //SC: O(n)
+
+//To call the function-
+let NUMS_LAST_OCCURANCE = [1, 2, 4, 2, 5, 1, 2, 7, 8, 9, 0];
+console.log(lastOccurance(NUMS_LAST_OCCURANCE, 2)); //since currentIndex is an optional param, we dont need to
+//  specify it.

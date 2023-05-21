@@ -25,3 +25,6 @@ function printNumebersInIncreasingOrder(limit: number, currentNumb: number = 1) 
 
 //TC: O(n)  //same as using a loop
 //SC: O(1)
+
+//To call the function-
+printNumebersInIncreasingOrder(34); //since we gave default value to currentNumb, we dont need to specify it.

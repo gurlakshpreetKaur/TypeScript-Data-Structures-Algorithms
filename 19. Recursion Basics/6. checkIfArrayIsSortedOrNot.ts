@@ -28,3 +28,7 @@ function isSorted(nums: number[], index = 1) {
 
 //TC: O(n)
 //SC: O(n)
+
+//To call the function-
+let NUMS_IS_SORTED = [1, 2, 3, 4, 5, 6, 7, 7, 6];
+console.log(isSorted(NUMS_IS_SORTED)); //since we set default value to index, it doesnt need to be specified.
