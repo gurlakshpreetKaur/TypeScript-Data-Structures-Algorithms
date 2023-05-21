@@ -1,4 +1,6 @@
-//Q: Write a function that when given an integer n as input, returns true if the number is a power of 2, else false.
+//leetCode function: https://leetcode.com/problems/power-of-two/description/
+//
+//Q:Given an integer n, return true if it is a power of two. Otherwise, return false.
 //
 //This is really when bitwise operators shine, as this question is related to powers of 2.
 //
