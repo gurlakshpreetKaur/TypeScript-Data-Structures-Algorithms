@@ -1,0 +1,11 @@
+Time Complexity And Space Complexity refer to the number of commands and the space in memory needed for an algorithm
+    to run WITH RELATION TO INPUT SIZE.
+
+This is something fairly theoretical, so writing code won't help much, so I'm sharing resources which you can read
+    and understand-
+    => https://www.geeksforgeeks.org/time-complexity-and-space-complexity/
+    => https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
+
+    Space Complexity is usually very easily to derive, it is Time Complexity that tends to be more complex, so
+        here are some practice questions-
+        https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/
