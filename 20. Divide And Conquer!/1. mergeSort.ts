@@ -103,8 +103,51 @@
 //This is actually pretty complex, so its okay if you dont understand it easily. You *will* need to revisit it
 //  a few times.
 
-//we make start and end optional params, so if they are undefined we assume start to be 0, and end to arr.length-1,
-//  this just makes it a little easier to call later.
+//This is how merge sort is usually done-
+function mergeSortConvetional(arr: number[]): number[] {
+    if (arr.length < 2) return arr; //if theres only 1 (or somehow 0 elements), now pointing in spliting
+    //                                      further, so just return the input array
+
+    let half = Math.floor(arr.length / 2); //calculate half index as half of the length of the array
+
+    let firstHalf = arr.splice(0, half);  //what this does is that it takes elements from 0 to half, and removes
+    //  them from orginal array, but returns them too. so the first half it stored now in this var, and the
+    //  arr var has been modified to the second half. 
+
+    //here we will write the function to merge the items
+    function merge(left: number[], right: number[]): number[] {
+        let sol: number[] = []; //decalare an array to store the solution
+
+        let i = 0; //this will keep track of left array's index
+        let j = 0; //this will keep track of right array's index
+
+        while (i < left.length && j < right.length) { //run a while loop which the indices are in range
+            if (left[i] < right[j]) { //since we want to sort in ascending order, we check if left array's item is
+                //less than right array's item and add it to sol array
+                sol.push(left[i]);
+                i++; //increment i by 1 so that the next element of left becomes focused
+            } else { //else right array's current element is less than (or equal to) left array's item
+                sol.push(right[j]); //so push that item
+                j++; //and increment j
+            }
+        }
+
+        //we might have some left over elements if the lengths of left and right are now the same. since we
+        //  modified the array each time in the while loop, we can just spread them to get the left overs and
+        //  add to the sol array. It is noteworthy that BOTH CANNOT BE EMPTY, either 1 will be empty.
+        //So here, either the left elements will be added, or right elements will be added, depending on which
+        //  has left over items.
+        return [...sol, ...left.slice(i), ...right.slice(j)];
+    }
+
+    return merge(mergeSort(firstHalf), mergeSort(arr));
+}
+
+//You will need to revisit it several times, and do try to code it on your own.
+//TC: O(nlogn)
+//SC: O(n)    as we declared that aux array
+
+//But we can make use of the inbuilt functions of js to make it easier
 function mergeSort(arr: number[]) {
     if (arr.length === 1 || arr.length === 0) { //if theres only 1 (or somehow 0 elements), now pointing in spliting
         //                                      further, so just return the input array
@@ -118,10 +161,12 @@ function mergeSort(arr: number[]) {
     //  arr var has been modified to the second half.
 
     //create function merge, which we will use to later merge the array
+    //THIS IS WHERE WE USE INBUILD JS FUNCTIONS
     function merge(left: number[], right: number[]) {
 
         let sol: number[] = []; //this will store solution
 
+        //instead of keeping track of indices, we simply use shift function to REMOVE the first element
         while (left.length && right.length) { //while the indices are less than lengths
             if (left[0] < right[0]) { //if 0th element of left is less than 0th element of right
                 sol.push(left.shift() as number);  //push first element, and then remove it so that the next element
@@ -136,7 +181,8 @@ function mergeSort(arr: number[]) {
         //  modified the array each time in the while loop, we can just spread them to get the left overs and
         //  add to the sol array. It is noteworthy that BOTH CANNOT BE EMPTY, either 1 will be empty.
         //So here, either the left elements will be added, or right elements will be added, depending on which
-        //  has left over items.
+        //  has left over items. SINCE WE USED SHIFT FUNCTION, WE DONT NEED TO USE SLICE FUNCTION HERE, WE CAN
+        //  JUST SPREAD THE ARRAYS
         return [...sol, ...left, ...right];
     }
 
