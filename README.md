@@ -17,9 +17,9 @@ Notes and codes from the Alpha course + bonus problems by Apna College In TypeSc
     git clone https://github.com/gurlakshpreetKaur/DSA-Codes
    ~~~
 - If at any point, you don't understand an inbuilt method that I used, Google it, or go to <a href="https://www.w3schools.com">W3Schools</a> and look for the method in the JS section.
-- If you don't understand why/how a certain algorithm works, dry run it.
+- If you don't understand why/how a certain algorithm works, <a href="https://devtips.tk/dry-running-a-program-everything-you-need-to-know">dry run it</a> (take a pen and paper, and go through lines of the code one-by-one, and operate on the variables as if you were the computer).
 - On subjects such as OOPS and TC, I have provided resouces, in the form of links, that you should read if you don't have a clear-cut understanding of the topic.
-- For each question, if I was able to find the question on leetCode, I've put the link there.
-- Bonus leetCode problem links are also given, which you may solve.
+- For each question, if I was able to find the question on leetCode, I've put the link there. You can use it to solve the question AFTER understanding the logic behind it DO NOT COPY THE CODE AND PASTE IT THERE.
+- Bonus leetCode problem links are also given, which you may solve for additional practice.
 - For each question, remember to not write the code side-by-side. If you don't know the solution, then first read the entire code, understand how/why it works by reading comments and/or dry running, when try to write it from your understanding. DO NOT JUST LOOK AT THE CODE AND TRY TO MEMORISE IT.
 
