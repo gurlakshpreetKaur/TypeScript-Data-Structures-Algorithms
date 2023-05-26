@@ -1,0 +1,20 @@
+TS is based on JS, and JS is a very dynamic language. In JS, arrays can be as long as we want it to.
+In TS, we can tighten the bounds, by settings fixed sizes and data types.
+
+So TS is the reverse of Java in this case. Java starts as a very strict language, and TS starts as a loose language.
+You can use ArrayLists in Java to loosen the bound, in TS, you can use the data types and size to tighten in.
+
+So working with ArrayLists in Java is the same as working with a simple array in TS. Which will make this chapter
+pretty easy for us.
+
+So here I've skipped the questions that we already know (such as sorting and reversing).
+
+Topics that have been skipped-
+1. Operations on ArrayLists
+2. Size of ArrayList
+3. Print reverse
+4. Find Maximum
+5. Swap 2 Numbers
+6. Sorting an ArrayList
+7. Pair Sum (already covered in '13. Arrays' practice problems, as a bonus question- 2Sum
+        link: https://github.com/gurlakshpreetKaur/DSA-Codes/blob/master/13.%20Arrays/Practice%20Problems/%5BBONUS%5D%20sorted2Sum.ts)
