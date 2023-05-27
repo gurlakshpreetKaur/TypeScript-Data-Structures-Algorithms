@@ -413,6 +413,7 @@ class LinkedList<T> {
         //SC: O(1)  we did it in place
     }
 
+    //[BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS]
     //now we know how to reverse the list inplace, lets write a method that will return a reversed VERSION of
     //  list. which means, the list will not directly be affected. we will make this as a getter
     get reversed(): LinkedList<T> | null {
@@ -454,6 +455,7 @@ class LinkedList<T> {
         //SC: O(n)  the new list
     }
 
+    //[BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS]
     //remove ith node
     //this method will take i as a parameter
     removeNodeAtI(i: number) {
@@ -490,6 +492,7 @@ class LinkedList<T> {
         //SC: O(1)  we did it in place
     }
 
+    //[BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS]
     //this function will find the first occurance of a given key, and remove that node from the list
     removeFirstOccuranceOfValue(key: T) {
         //for this we will use a combination of 2 functions- indexOf and removeNode.
@@ -502,6 +505,7 @@ class LinkedList<T> {
         //SC: O(1)  we did it in place
     }
 
+    //[BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS]
     //this function will remove ALL occurance of a value
     removeAllOccurancesOfValue(key: T) {
         //we will use the removeNodeAtI and indexOf with a while loop. you can also this with indexOf and 
@@ -620,6 +624,7 @@ class LinkedList<T> {
         //SC: O(reversed) = O(n)
     }
 
+    //[BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS]
     //a simpler AND faster approach to palindrome question
     isPalindromeSimple() {
         //https://leetcode.com/problems/palindrome-linked-list
