@@ -1,0 +1,7 @@
+We already know how an LL can become circular.
+if you take its last node, and make its next some other in the LL, it becomes circular.
+here, we'll talk about the head node. the process is same for head node.
+
+BUT if you want to make a DLL circular, for all nodes except the head, it is simple. you set next of tail to that
+    specific node. BUT for the head node, there are 2 steps- 1. set next of tail to head. 2. set prev of head to
+    tail. this is just to maintain consistency, as if next of tail is head, then prev of head MUST BE TAIL in a DLL.
