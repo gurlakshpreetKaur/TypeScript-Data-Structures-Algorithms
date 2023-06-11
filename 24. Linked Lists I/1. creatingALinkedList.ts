@@ -9,7 +9,8 @@
 //  So for node1, the value is 1, and the next node is node2.
 //  So on, until the last node, which doesnt have a next node, its next node is null.
 
-//So lets create a class AND a function to create a linkedList.
+//This can actually be implemented with both functional and object oriented programming, but I just prefer OOP
+//  so I'll be using that.
 
 //to create a linkedlist, first we need a node. we will give this class a generic, so that we are able to create
 //  nodes with different data types as the value
@@ -562,9 +563,9 @@ class LinkedList<T> {
         //SC: O(1)
     }
 
-    //now we will write a method to find the mid node. for this, you could obviously use the length and loop over
+    //now we will write a getter to find the mid node. for this, you could obviously use the length and loop over
     //  the list but we will use a slow-fast approach. for this, look at the comments
-    midNode(): NodeForLinkedList<T> | null {
+    get midNode(): NodeForLinkedList<T> | null {
         //if the head is null, the list is empty, so return null
         if (this.head === null) return null;
 
@@ -574,7 +575,7 @@ class LinkedList<T> {
         //now onto the slow-fast approach
         //the way this approach works is that there will be 2 pointers- a slow pointer and fast pointer
         let slow: null | NodeForLinkedList<T> = this.head; //the slow pointer will traverse each node, one-by-one
-        let fast: null | NodeForLinkedList<T> | undefined = this.head.next; //the fast pointer will traverse 
+        let fast: null | NodeForLinkedList<T> | undefined = this.head; //the fast pointer will traverse 
         //  2 nodes at a time
         //this way, when fast becomes null, we know that the entire list has been covered. and since slow was
         //  travelling at HALF THE SPEED, it will have the MID NODE
@@ -594,7 +595,8 @@ class LinkedList<T> {
 
 
     //check if list is a palindrome
-    isPalindrome(): boolean {
+    //NAIVE APPROACH
+    isPalindromeNaive(): boolean {
         //leetCode link: https://leetcode.com/problems/palindrome-linked-list/
 
         if (this.head === null || this.head.next === null) return true; //if there are 1 or 0 nodes, return true
@@ -624,9 +626,47 @@ class LinkedList<T> {
         //SC: O(reversed) = O(n)
     }
 
+    //SMART BIG BRAIN APPROACH
+    isPalindromeBigBrain(): boolean {
+        //a palidrome can be read same from front to back and back to front. this means that if you split it in 
+        //  half and reverse ONE OF THE HALVES, they will both read the same.
+        //  eg. 1221  becomes  12 and 21. if you reverse 12, you get 21, which is same as other half.
+        //      131   will become 13 and 31, if you reverse 31, you get 13 which is same as other half. (for odd
+        //              numbers we will take 1 extra number on both sides).
+        //So that means that if we find the middle node, and reverse it, and compare it to the other half, we should
+        //  be able to get whether it is palidromic or not.
+
+        //we already have the function to get the middle node, so lets use that.
+        let middleNode = this.midNode;
+
+        //now, reverse the node using the same technique
+        let prev: NodeForLinkedList<T> | null = null;
+        let curr: NodeForLinkedList<T> | null = middleNode;
+        let next: NodeForLinkedList<T> | null = null;
+        while (curr !== null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        //now compare each node
+        let reversedHalf: NodeForLinkedList<T> | null = prev;
+        let startNode: NodeForLinkedList<T> | null = this.head;
+        while (reversedHalf !== null && startNode !== null) {
+            //return false if they dont match
+            if (reversedHalf.value !== startNode.value) return false;
+            reversedHalf = reversedHalf.next;
+            startNode = startNode.next;
+        }
+
+        //at the end return true
+        return true;
+    }
+
     //[BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS] [BONUS]
     //a simpler AND faster approach to palindrome question
-    isPalindromeSimple() {
+    isPalindromeSimple(): boolean {
         //https://leetcode.com/problems/palindrome-linked-list
         //previously, we use a linked list. which is why our solution was pretty slow. but this time we will
         //  use linkedlists WITH A STRING, to make it faster. what we will do is create 2 empty strings, stright
